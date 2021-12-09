@@ -13,12 +13,14 @@ $associativeArray = [
 var_dump($associativeArray);
 
 echo("<div>For loop: </div><br/>");
+
 for($i = 0; $i < count($numericalArray); $i++)
 {
     echo("<p>$numericalArray[$i]</p><br>");
 }
 
 echo("<div>Foreach loop: </div><br/>");
+
 foreach ($associativeArray as $key => $value)
 {
     echo("<p>$key</p><br>");
@@ -37,6 +39,8 @@ echo key($numericalArray) . "<br/>\n";
 echo("<div>Using reset and then current </div>");
 reset($numericalArray);
 echo current($numericalArray) . "<br />\n";
+
+
 
 echo("<div>Time for globals: </div><br/>");
 foreach($GLOBALS as $key => $value)
