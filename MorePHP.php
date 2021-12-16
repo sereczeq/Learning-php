@@ -13,9 +13,9 @@
 //to prepare a separate "diagnostic" page that will reveal the content of the cookie.
 
 
-
 const cookieName = "Cookie";
 const oneDay = 86400 * 30; // 1 day
+displayText();
 
 if(array_key_exists("one", $_POST))
 {

@@ -1,4 +1,10 @@
+
+
 <?php
+
+
+
+
 
 $numericalArray = array(0, 1, 2, 3, 4);
 var_dump($numericalArray);
