@@ -907,37 +907,71 @@ test\\_%|schema||&apos;&apos;||UPDATE|G</Grants>
       <Host>localhost</Host>
     </user>
     <table id="247" parent="236" name="account"/>
-    <column id="248" parent="247" name="id">
+    <table id="248" parent="236" name="account2"/>
+    <column id="249" parent="247" name="id">
       <DataType>int(6) unsigned|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="249" parent="247" name="login">
+    <column id="250" parent="247" name="login">
       <DataType>varchar(30)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="250" parent="247" name="password">
+    <column id="251" parent="247" name="password">
       <DataType>varchar(30)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="251" parent="247" name="info">
+    <column id="252" parent="247" name="info">
       <DataType>varchar(50)|0s</DataType>
       <Position>4</Position>
     </column>
-    <index id="252" parent="247" name="login">
+    <index id="253" parent="247" name="login">
       <ColNames>login</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="253" parent="247" name="PRIMARY">
+    <key id="254" parent="247" name="PRIMARY">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
     </key>
-    <key id="254" parent="247" name="login">
+    <key id="255" parent="247" name="login">
+      <ColNames>login</ColNames>
+      <UnderlyingIndexName>login</UnderlyingIndexName>
+    </key>
+    <column id="256" parent="248" name="id">
+      <DataType>int(6) unsigned|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="257" parent="248" name="login">
+      <DataType>varchar(30)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="258" parent="248" name="password">
+      <DataType>varchar(30)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="259" parent="248" name="info">
+      <DataType>varchar(50)|0s</DataType>
+      <Position>4</Position>
+    </column>
+    <index id="260" parent="248" name="login">
+      <ColNames>login</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="261" parent="248" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+    </key>
+    <key id="262" parent="248" name="login">
       <ColNames>login</ColNames>
       <UnderlyingIndexName>login</UnderlyingIndexName>
     </key>
